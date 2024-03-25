@@ -1,0 +1,16 @@
+# crea un programma per sumulare l'impatto di una spesa sul tuo bilancio
+
+# definisco la variabile di partenza NB: è una stringa
+
+bilancio = input("inserisci il tuo bilancio corrente\n")
+
+# variabile spesa che mi fa inserire un input, NB: input da SEMPRE una stringa come risultato
+  
+spesa = input("inserisci una nuova spesa\n")
+
+# definisco una variabile nuovo_bilancio e faccio la differenza tra il bilancio e la spesa
+  # NB: necessario convertire con la funzione int() spesa e bilancio, che è una stringa, in un intero in modo da compiere l'operaizone
+  
+nuovo_bilancio = int(bilancio) - int(spesa)
+
+print ("Grazie! Il tuo saldo è di", nuovo_bilancio)
