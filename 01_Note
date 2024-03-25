@@ -1,0 +1,10 @@
+# definire una variabile
+a = 1
+
+# FUNZIONI CHE CONOSCO
+print()# mostra il contenuto tra parentesi
+type() # mi da informazioni sul tipo della variabile int,str,float...
+inport() # mi permette di inserire un dato 
+
+
+# TIPI I 
