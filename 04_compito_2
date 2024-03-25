@@ -14,3 +14,37 @@ spesa = input("inserisci una nuova spesa\n")
 nuovo_bilancio = int(bilancio) - int(spesa)
 
 print ("Grazie! Il tuo saldo è di", nuovo_bilancio)
+
+
+
+ # NUOVO COMPITO
+
+# Scrivere un programma chiamato numerator
+# Il programma deve:
+# -1 Scrivere un messaggio di benvenuto al lancio, indicando il suo nome
+# -2 Chiedere all'utente quattro numeri 
+# -3 Sommare i numeri e stamparli a video
+# -4 Chiedere un quinto numero
+# -5 Sottrarlo dalla somma precedente e stamparlo a video
+
+#-1
+print("Ciao, sono NUMERATOR  un calcolatore di numeri per non infami")
+nome = input("inserisci qui il tuo nome:\n")
+print("ciao", nome)
+
+#-2
+a = input("inserisci il primo numero per iniziare la somma: ")
+b = input("inseriscine un'altro: ")
+c = input("ancora... ")
+d = input ("l'ultimo: ")
+
+#-3
+somma = int(a) + int(b) + int(c) + int(d)
+print("il risultato dovrebbe essere: ",somma)
+
+#-4
+e = input("inserisci un numero da sottrarre al tuo risultato: ")
+
+#-5
+print("il tuo nuovo risultato dovrebbe essere:", somma - int(e))
+
