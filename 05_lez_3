@@ -83,7 +83,7 @@ False and True # False
 True and True # True
 False and False # False
 
-# and => tutte variabili devono essere false per avere valore falso (quindi ne basta una vera per avere vero)
+# or => tutte variabili devono essere false per avere valore falso (quindi ne basta una vera per avere vero)
 True or False # True
 False or True # True
 False or False # False
