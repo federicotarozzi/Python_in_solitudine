@@ -10,7 +10,7 @@
 # 4. Se l'operazione è di prelievo, chiedere la cifra (si assuma che l'utente inserisca un intero) e verificare che il bilancio sia sufficente. Se lo è detrarlo dal totale e stampare il nuovo bilancio a video terminando così il programma. Se non lo è terminare il programma con un messaggio di errore.
 
 
-user1 = "Bestia"
+user1 = "Laura"
 psw1 = "cul8"
 bilancio1 = 2000
 
