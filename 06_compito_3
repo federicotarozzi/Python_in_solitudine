@@ -18,7 +18,41 @@ user2 = "Pecco"
 psw2 = "domizia00"
 bilancio2 = 120
 
+print("Benvenuto nell'applicazione bancaria che ti permette di prelevare o depositare denaro suo tuo conto, prego effettua il login per comincaire")
 
-# idea 1 non funzionante, ma perchè?
-if username (not: user1 or user2) and passward not: psw1 or psw2
+username = input("inserisci il tuo username: ")
+password = input("inserici la tua passward: ")
+
+
+    
+if (username == user1 and password == psw1) or (username == user2 and password == psw2):
+    if username == user1:
+        print("il tuo bilancio è: ", bilancio1)
+    if username == user2:
+         print("il tuo bilancio è: ", bilancio2)
+    op = input("vuoi effettuare un prelievo o un deposito? digita P per prelevare e D per depositare: ")
+    if (op == "D") or (op == "P"):
+        if op == "D":
+            cifraD = input("inserisci la cifra che vuoi depositare: ")
+            if username == user1:
+                print(bilancio1 + int(cifraD))
+            if username == user2:
+                print(bilancio2 + int(cifraD))
+        if op == "P":
+            cifraP = input("inserisci la cifra che vuoi prelevare: ")
+            if username == user1:
+                if int(cifraP) <= bilancio1:
+                    print(bilancio1 - int(cifraP))
+            if username == user2:
+                if int(cifraP) <= bilancio2:
+                    print(bilancio2 - int(cifraP))
+            else:
+                print("errore")
+        
+    else:
+        print("carattere non valido, inserisci P o D")
+
+else:
+     print("login errato!")
+
 
