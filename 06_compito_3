@@ -18,3 +18,7 @@ user2 = "Pecco"
 psw2 = "domizia00"
 bilancio2 = 120
 
+
+# idea 1 non funzionante, ma perchè?
+if username (not: user1 or user2) and passward not: psw1 or psw2
+
