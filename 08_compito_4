@@ -1,1 +1,38 @@
+# Scrivi un programma in Python che chieda all'utente il suo reddito annuo e calcoli l'ammontare delle tasse dovute basandosi su semplici fasce di reddito.
 
+# Prima di tutto chiedere all'utente il suo nome e cognome in una sola stringa (usando cioè un solo input). Se il suo nome o cognome includono "Fedez" (indipendentemente dalle maiuscole), allora stampare direttamente "Sei nulla tenente." e chiudere il programma. Altrimenti procedere come segue:
+
+# Redditi fino a 10.000 €: esenti da tasse.
+# Redditi superiori a 10.000 € e fino a 20.000 €: tassati al 10%.
+# Redditi superiori a 20.000 € e fino a 30.000 €: tassati al 20%.
+# Redditi superiori a 30.000 €: tassati al 30%.
+# Il programma dovrebbe mostrare l'ammontare delle tasse dovute secondo queste regole.
+
+
+#--------------------------------------------------
+
+
+nom_cogn = input("inserisci il tuo nome e cognome tutto attaccato: ")
+
+if "palo" in str.lower(nom_cogn):
+    print("inutile che ci provi Palo sei nullatenente")
+else:
+    print("Puoi procedere!")
+
+soldi = int(input("inserisci ora la cifra dell'ammontare del tuo conto bancario ad oggi per visualizzare quante tasse devi pagare: "))
+
+if soldi > 10000:
+    print("con un conto inferiore ai 10'000 euro sei esente da tasse")
+
+tasse10 = ((soldi*10)/100)
+tasse20 = ((soldi*20)/100)
+tasse30 = ((soldi*30)/100)
+
+if soldi > 10000 and soldi < 20000:
+    print(tasse10)
+if soldi > 20000 and soldi < 30000:
+   print(tasse20)
+if soldi > 20000 and soldi < 30000:
+   print(tasse30)
+
+# serve un nest di if credo altrimetni li esegue tutti. potrebbe essere una soluzione concatenare tutte le possibilit con l'uso di elsif 
