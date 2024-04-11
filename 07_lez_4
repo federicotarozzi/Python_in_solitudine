@@ -1,1 +1,70 @@
+from itertools import count
+
+
+passward = "gamberetto"
+
+# cose che si possono fare con le stringhe
+
+# capire la lunghezza della stringa (es: la passward non è abbastanza lunga)
+if len(passward) <= 5:
+    print("la passward lunga almeno 5 caratteri")
+else:
+    print(passward)
+
+# per cotare quante volte una cosa appare in una varaibile, uso nomerdellavariabile.count()
+if "r" in passward:
+    c = passward.count("r")
+    print("nella tua passward compare la lettera r, queste è il numero di volte in cui appare", c )
+else:
+    print("no R nella tua passward")
+
+
+if passward.startswith("ga"):
+    print("good")
+else:
+    print("bad")
+
+if passward.endswith("to"):
+    print("good")
+else:
+    print("bad")
+
+passward.upper
+passward.lower
+
+
+# esercizio:
+'''
+deve essere maggiore di 6 caratteri e minore di 15
+deve avere almeno una maiuscola e una minuscola
+deve avere almeno un numero
+non può iniziare e finire con la parola "culo"
+'''
+
+passward = input("inserisci la tua passward:")
+
+if len(passward) > 6 and len(passward) < 15:
+    print("lunghezza accettata")
+else:
+    print("lunghezza rifutata")
+if passward.upper and passward.lower:
+    print("criterio minuscolo maiuscolo soddisfatto")
+else: 
+    print("criterio minuscolo maiuscolo insoddisfatto")
+
+'''if str(0,1,2,3,4,5,6,7,8,9) in passward:
+    print("criterio numero soddisfatto")
+else: 
+    print("criterio numero insoddisfatto")'''
+
+if passward.startswith("culo"):
+    print("password non accettata")
+else:
+    print("passward accettata ")
+
+if passward.endswith("culo"):
+    print("password non accettata")
+else:
+    print("passward accettata ")
+
 
