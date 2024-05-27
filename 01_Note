@@ -7,4 +7,10 @@ type() # mi da informazioni sul tipo della variabile int,str,float...
 input() # mi permette di inserire un dato 
 
 
-# TIPI I 
+# LISTE 
+l = [1, 2, 3] # lista 
+print(len(l)) # conoscere la lunghezza di una lista 
+l.append(4) # aggiunge quattro alla lista
+l.pop(0) # toglie il primo elemento (indice zero)
+
+
