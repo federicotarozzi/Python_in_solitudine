@@ -55,6 +55,3 @@ if (username == user1 and password == psw1) or (username == user2 and password =
 else:
      print("login errato!")
 
-
-# culo
-# ano
